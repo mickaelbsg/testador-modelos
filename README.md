@@ -46,6 +46,11 @@ npm run dev
 
 Isso instala as dependencias dos dois apps (workspaces) e sobe backend + frontend juntos.
 
+Depois que subir:
+
+- Frontend: http://localhost:5173
+- Backend: http://localhost:3001
+
 ## Rodar manualmente (opcional)
 
 Backend:
@@ -72,3 +77,48 @@ npm run dev
 - `PUT /api/prompt`
 - `POST /api/test/run`
 - `GET /api/test/last`
+
+## Onde os dados sao salvos
+
+Toda a persistencia local fica em:
+
+- `backend/data/store.json`
+
+Campos principais do arquivo:
+
+- `models`: lista de modelos cadastrados
+- `prompt`: prompt atual salvo
+- `lastRun`: ultimo teste executado (ranking, latencia, status, erros e respostas)
+
+## Comportamento ao excluir modelo
+
+Quando voce remove um modelo pela interface, ele e removido de `models` no arquivo `backend/data/store.json`.
+
+Observacao:
+
+- O `lastRun` antigo pode continuar mostrando esse modelo, pois representa um historico da ultima execucao.
+- Na proxima execucao, o teste roda apenas com modelos ainda presentes em `models` e com `enabled: true`.
+
+## Troubleshooting
+
+### "Nao aparece log" ou app nao sobe
+
+Geralmente e porta ocupada (`EADDRINUSE`).
+
+1. Verifique portas em uso:
+
+```bash
+ss -ltnp | grep -E '(:3001|:5173|:5174)'
+```
+
+2. Mate processos antigos Node (ajuste os PIDs conforme saida):
+
+```bash
+kill <pid1> <pid2> <pid3>
+```
+
+3. Suba novamente:
+
+```bash
+npm run dev
+```
