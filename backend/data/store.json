@@ -1,0 +1,150 @@
+{
+  "models": [
+    {
+      "id": "ef012a37-2a87-479f-9627-4c0914260466",
+      "name": "z-ai/glm-5.2",
+      "enabled": true
+    },
+    {
+      "id": "89a990fa-4c3d-44e2-9659-f2cc3085b60e",
+      "name": "mistralai/mistral-medium-3.5-128b",
+      "enabled": true
+    },
+    {
+      "id": "3bdf5a5a-fb38-45b9-ad0c-bd8503593ff6",
+      "name": "deepseek-ai/deepseek-v4-flash",
+      "enabled": true
+    },
+    {
+      "id": "55191df5-90b0-45ed-a1b8-b3a7b13b0d69",
+      "name": "deepseek-ai/deepseek-v4-pro",
+      "enabled": true
+    }
+  ],
+  "prompt": "Explique o que é um agente",
+  "lastRun": {
+    "runId": "d8af86c6-430f-4d5e-8c76-464a39773d01",
+    "ranAt": "2026-07-05T15:24:39.036Z",
+    "promptUsed": "Explique o que é um agente",
+    "provider": "https://integrate.api.nvidia.com/v1/chat/completions",
+    "results": [
+      {
+        "modelId": "llama-3.1-8b-instruct",
+        "modelName": "meta/llama-3.1-8b-instruct",
+        "status": 200,
+        "latencyMs": 3346,
+        "error": null,
+        "responseText": "Um agente é uma entidade que age em nome de outra pessoa ou organização, geralmente com o objetivo de realizar uma tarefa ou missão específica. Os agentes podem ser encontrados em diversas áreas, como:\n\n1. **Direito**: Um agente é uma pessoa que age em nome de outra pessoa, chamada de cliente, para realizar uma ação ou transação. Por exemplo, um advogado pode ser um agente de seu cliente em um processo judicial.\n2. **Economia**: Um agente econômico é uma entidade que toma decisões sobre a alocação de recursos e a produção de bens e serviços. Exemplos incluem consumidores, empresas e governos.\n3. **Inteligência artificial**: Em inteligência artificial, um agente é um programa de computador que age de forma autônoma para realizar uma tarefa ou missão. Exemplos incluem robôs, sistemas de recomendação e sistemas de aprendizado de máquina.\n4. **Política**: Um agente político é uma pessoa ou organização que age em nome de um governo ou partido político. Exemplos incluem diplomatas, funcionários públicos e partidos políticos.\n\nOs agentes podem ser classificados em diferentes tipos, como:\n\n* **Agentes autônomos**: São agentes que agem de forma independente e autônoma.\n* **Agentes não autônomos**: São agentes que agem sob a direção de outra pessoa ou organização.\n* **Agentes racionais**: São agentes que tomam decisões com base em informações e objetivos racionais.\n* **Agentes irracionais**: São agentes que tomam decisões de forma aleatória ou irracional.\n\nEm resumo, um agente é uma entidade que age em nome de outra pessoa ou organização, com o objetivo de realizar uma tarefa ou missão específica. Os agentes podem ser encontrados em diversas áreas e podem ser classificados em diferentes tipos com base em sua autonomia, racionalidade e outros fatores.",
+        "available": true,
+        "score": 96.7
+      },
+      {
+        "modelId": "mistral-nemo-12b-instruct",
+        "modelName": "mistralai/mistral-nemo-12b-instruct",
+        "status": 404,
+        "latencyMs": 476,
+        "error": "Falha sem payload de erro.",
+        "responseText": "",
+        "available": false,
+        "score": 0
+      },
+      {
+        "modelId": "qwen2-72b-instruct",
+        "modelName": "qwen/qwen2-72b-instruct",
+        "status": 404,
+        "latencyMs": 477,
+        "error": "Falha sem payload de erro.",
+        "responseText": "",
+        "available": false,
+        "score": 0
+      },
+      {
+        "modelId": "93c8b354-1a5b-4a23-b011-7fea8ff69340",
+        "modelName": "deepseek-ai/deepseek-v4-flash",
+        "status": 504,
+        "latencyMs": 45001,
+        "error": "Timeout ao aguardar resposta do provider.",
+        "responseText": "",
+        "available": false,
+        "score": 0
+      },
+      {
+        "modelId": "ef012a37-2a87-479f-9627-4c0914260466",
+        "modelName": "z-ai/glm-5.2",
+        "status": 200,
+        "latencyMs": 17758,
+        "error": null,
+        "responseText": "A palavra **\"agente\"** pode ter vários significados dependendo da área de estudo (como Filosofia, Biologia ou Tecnologia), mas em sua essência, um agente é **algo ou alguém que tem a capacidade de agir, tomar decisões e causar mudanças em um ambiente.**\n\nPara entender de forma simples, podemos definir um agente como uma entidade que **percebe** o mundo ao seu redor, **pensa** ou processa essas informações, e **age** com base nelas para alcançar um objetivo.\n\nAqui estão os principais contextos em que a palavra é usada:\n\n### 1. Em Inteligência Artificial e Tecnologia (Agente Autônomo)\nHoje em dia, quando as pessoas falam sobre \"agentes\", geralmente estão se referindo a Inteligência Artificial. \nNesse contexto, um agente é um sistema de software que não apenas responde a comandos, mas age de forma autônoma. \n* **Exemplo:** A diferença entre um *chatbot* comum e um *agente de IA*. Um chatbot de atendimento responde a perguntas (\"Qual o horário de funcionamento?\"). Um agente de IA pode entender um comando (\"Agende uma consulta para amanhã à tarde\"), acessar sua agenda, verificar horários disponíveis, enviar um e-mail de confirmação e avisar quando estiver pronto.\n\n### 2. Na Filosofia e Sociologia (Agente Moral ou Social)\nNas ciências humanas, um agente é qualquer ser humano ou entidade capaz de tomar decisões morais e agir no mundo, gerando consequências. \n* **Agente x Paciente:** Na filosofia, o \"agente\" é quem pratica a ação, enquanto o \"paciente\" é quem sofre a ação. \n* **Agente Social:** Um indivíduo ou grupo que influencia a sociedade (como uma empresa, um governo ou um ativista).\n\n### 3. Na Biologia e Química\nNas ciências naturais, um agente é uma substância ou organismo que causa uma alteração específica.\n* **Agente patogênico:** Um vírus ou bactéria que causa uma doença.\n* **Agente químico:** Uma substância que provoca uma reação (como um agente oxidante).\n\n### ",
+        "available": true,
+        "score": 82.2
+      }
+    ],
+    "ranking": [
+      {
+        "modelId": "llama-3.1-8b-instruct",
+        "modelName": "meta/llama-3.1-8b-instruct",
+        "status": 200,
+        "latencyMs": 3346,
+        "error": null,
+        "responseText": "Um agente é uma entidade que age em nome de outra pessoa ou organização, geralmente com o objetivo de realizar uma tarefa ou missão específica. Os agentes podem ser encontrados em diversas áreas, como:\n\n1. **Direito**: Um agente é uma pessoa que age em nome de outra pessoa, chamada de cliente, para realizar uma ação ou transação. Por exemplo, um advogado pode ser um agente de seu cliente em um processo judicial.\n2. **Economia**: Um agente econômico é uma entidade que toma decisões sobre a alocação de recursos e a produção de bens e serviços. Exemplos incluem consumidores, empresas e governos.\n3. **Inteligência artificial**: Em inteligência artificial, um agente é um programa de computador que age de forma autônoma para realizar uma tarefa ou missão. Exemplos incluem robôs, sistemas de recomendação e sistemas de aprendizado de máquina.\n4. **Política**: Um agente político é uma pessoa ou organização que age em nome de um governo ou partido político. Exemplos incluem diplomatas, funcionários públicos e partidos políticos.\n\nOs agentes podem ser classificados em diferentes tipos, como:\n\n* **Agentes autônomos**: São agentes que agem de forma independente e autônoma.\n* **Agentes não autônomos**: São agentes que agem sob a direção de outra pessoa ou organização.\n* **Agentes racionais**: São agentes que tomam decisões com base em informações e objetivos racionais.\n* **Agentes irracionais**: São agentes que tomam decisões de forma aleatória ou irracional.\n\nEm resumo, um agente é uma entidade que age em nome de outra pessoa ou organização, com o objetivo de realizar uma tarefa ou missão específica. Os agentes podem ser encontrados em diversas áreas e podem ser classificados em diferentes tipos com base em sua autonomia, racionalidade e outros fatores.",
+        "available": true,
+        "score": 96.7
+      },
+      {
+        "modelId": "ef012a37-2a87-479f-9627-4c0914260466",
+        "modelName": "z-ai/glm-5.2",
+        "status": 200,
+        "latencyMs": 17758,
+        "error": null,
+        "responseText": "A palavra **\"agente\"** pode ter vários significados dependendo da área de estudo (como Filosofia, Biologia ou Tecnologia), mas em sua essência, um agente é **algo ou alguém que tem a capacidade de agir, tomar decisões e causar mudanças em um ambiente.**\n\nPara entender de forma simples, podemos definir um agente como uma entidade que **percebe** o mundo ao seu redor, **pensa** ou processa essas informações, e **age** com base nelas para alcançar um objetivo.\n\nAqui estão os principais contextos em que a palavra é usada:\n\n### 1. Em Inteligência Artificial e Tecnologia (Agente Autônomo)\nHoje em dia, quando as pessoas falam sobre \"agentes\", geralmente estão se referindo a Inteligência Artificial. \nNesse contexto, um agente é um sistema de software que não apenas responde a comandos, mas age de forma autônoma. \n* **Exemplo:** A diferença entre um *chatbot* comum e um *agente de IA*. Um chatbot de atendimento responde a perguntas (\"Qual o horário de funcionamento?\"). Um agente de IA pode entender um comando (\"Agende uma consulta para amanhã à tarde\"), acessar sua agenda, verificar horários disponíveis, enviar um e-mail de confirmação e avisar quando estiver pronto.\n\n### 2. Na Filosofia e Sociologia (Agente Moral ou Social)\nNas ciências humanas, um agente é qualquer ser humano ou entidade capaz de tomar decisões morais e agir no mundo, gerando consequências. \n* **Agente x Paciente:** Na filosofia, o \"agente\" é quem pratica a ação, enquanto o \"paciente\" é quem sofre a ação. \n* **Agente Social:** Um indivíduo ou grupo que influencia a sociedade (como uma empresa, um governo ou um ativista).\n\n### 3. Na Biologia e Química\nNas ciências naturais, um agente é uma substância ou organismo que causa uma alteração específica.\n* **Agente patogênico:** Um vírus ou bactéria que causa uma doença.\n* **Agente químico:** Uma substância que provoca uma reação (como um agente oxidante).\n\n### ",
+        "available": true,
+        "score": 82.2
+      },
+      {
+        "modelId": "mistral-nemo-12b-instruct",
+        "modelName": "mistralai/mistral-nemo-12b-instruct",
+        "status": 404,
+        "latencyMs": 476,
+        "error": "Falha sem payload de erro.",
+        "responseText": "",
+        "available": false,
+        "score": 0
+      },
+      {
+        "modelId": "qwen2-72b-instruct",
+        "modelName": "qwen/qwen2-72b-instruct",
+        "status": 404,
+        "latencyMs": 477,
+        "error": "Falha sem payload de erro.",
+        "responseText": "",
+        "available": false,
+        "score": 0
+      },
+      {
+        "modelId": "93c8b354-1a5b-4a23-b011-7fea8ff69340",
+        "modelName": "deepseek-ai/deepseek-v4-flash",
+        "status": 504,
+        "latencyMs": 45001,
+        "error": "Timeout ao aguardar resposta do provider.",
+        "responseText": "",
+        "available": false,
+        "score": 0
+      }
+    ],
+    "recommendedModel": {
+      "modelId": "llama-3.1-8b-instruct",
+      "modelName": "meta/llama-3.1-8b-instruct",
+      "status": 200,
+      "latencyMs": 3346,
+      "error": null,
+      "responseText": "Um agente é uma entidade que age em nome de outra pessoa ou organização, geralmente com o objetivo de realizar uma tarefa ou missão específica. Os agentes podem ser encontrados em diversas áreas, como:\n\n1. **Direito**: Um agente é uma pessoa que age em nome de outra pessoa, chamada de cliente, para realizar uma ação ou transação. Por exemplo, um advogado pode ser um agente de seu cliente em um processo judicial.\n2. **Economia**: Um agente econômico é uma entidade que toma decisões sobre a alocação de recursos e a produção de bens e serviços. Exemplos incluem consumidores, empresas e governos.\n3. **Inteligência artificial**: Em inteligência artificial, um agente é um programa de computador que age de forma autônoma para realizar uma tarefa ou missão. Exemplos incluem robôs, sistemas de recomendação e sistemas de aprendizado de máquina.\n4. **Política**: Um agente político é uma pessoa ou organização que age em nome de um governo ou partido político. Exemplos incluem diplomatas, funcionários públicos e partidos políticos.\n\nOs agentes podem ser classificados em diferentes tipos, como:\n\n* **Agentes autônomos**: São agentes que agem de forma independente e autônoma.\n* **Agentes não autônomos**: São agentes que agem sob a direção de outra pessoa ou organização.\n* **Agentes racionais**: São agentes que tomam decisões com base em informações e objetivos racionais.\n* **Agentes irracionais**: São agentes que tomam decisões de forma aleatória ou irracional.\n\nEm resumo, um agente é uma entidade que age em nome de outra pessoa ou organização, com o objetivo de realizar uma tarefa ou missão específica. Os agentes podem ser encontrados em diversas áreas e podem ser classificados em diferentes tipos com base em sua autonomia, racionalidade e outros fatores.",
+      "available": true,
+      "score": 96.7
+    },
+    "summary": {
+      "total": 5,
+      "success": 2,
+      "failed": 3
+    }
+  }
+}
